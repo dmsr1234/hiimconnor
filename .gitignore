@@ -18,3 +18,5 @@ _site/
 Gemfile.lock
 
 .wrangler
+
+scratch.md
