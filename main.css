@@ -7,7 +7,7 @@ html {
         width: 0%
     }
     100% {
-        width: 100%
+        width: 97.5%
     }
 }
 
@@ -19,19 +19,20 @@ html {
 
 
 body {
-    font-family: "Rubik", sans-serif;
+    font-family: "Atkinson Hyperlegible Next", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
     font-size: 1rem;
 
-    line-height: 1.2em;
+    line-height: 1.5em;
 
-    background-color: rgb(246, 249, 241);
-    color: rgb(7, 7, 7);
+    background-color: rgb(251, 255, 246);
+    color: rgb(16, 16, 16);
 
     margin-inline:5%;
     margin-block:2.5%;
+    width: 90vw;
 }
 
 .hl-b {
@@ -84,7 +85,7 @@ body {
 }
 
 .sect-break:after {
-    width: 100%;
+    width: 50vw;
 }
 
 #sect-break-1 {
@@ -131,11 +132,14 @@ body {
     background-color: rgb(179, 0, 0);
 }
 
+.no-anim {
+    animation-duration: 0s;
+}
 
 @media (prefers-color-scheme: dark) {
   body {
     background-color: rgb(17, 19, 26);
-    color: rgb(246, 249, 241);
+    color: rgb(229, 230, 228);
   }
 
   a {
@@ -151,6 +155,12 @@ body {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+    body {
+        animation-duration: 0s;
+    }
+}
+
 
 @media (max-width:860px) {
     html {
@@ -161,11 +171,14 @@ body {
         line-height: 1.5em;
     }
     p {
-        font-size: 1.6em;
+        font-size: 1.2em;
         line-height: 1.5em;
     }
     li {
-        font-size: 1.6em;
+        font-size: 1.2em;
         line-height: 1.5em;
+    }
+    .sect-break:after {
+        width: 10%;
     }
 }
