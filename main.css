@@ -1,5 +1,6 @@
 html {
   font-size: 16px;
+  background-color: rgb(252, 255, 225);
 }
 
 @keyframes divFromSide {
@@ -27,7 +28,7 @@ body {
 
     line-height: 1.5em;
 
-    background-color: rgb(251, 255, 246);
+    background-color: rgb(252, 255, 225);
     color: rgb(16, 16, 16);
 
     margin-inline:5%;
@@ -137,6 +138,11 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
+  html {
+    background-color: rgb(17, 19, 26);
+    color: rgb(229, 230, 228);
+  }
+  
   body {
     background-color: rgb(17, 19, 26);
     color: rgb(229, 230, 228);
